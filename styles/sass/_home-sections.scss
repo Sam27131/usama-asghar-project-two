@@ -1,0 +1,95 @@
+.home-section1-container {
+    background-color: #EAFEFC;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div {
+        width: 600px;
+        padding: 20px;
+        height: 200px;
+        h2 {
+            font-family: 'IM Fell English', serif;
+            font-size: 4.5rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #0D457F;
+            width: 100%;
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.home-section2-container {
+    background-color: #0D457F;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div {
+        width: calc(50% - 40px);
+        padding: 20px;
+        h2 {
+            font-family: 'IM Fell English', serif;
+            font-size: 4.5rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 100%;
+        }
+        p {
+            margin-top: 20px;
+            color: #FFFFFF;
+        }
+        a {
+            font-family: 'IM Fell English', serif;
+            color: #0D457F;
+            background-color: #FDD908;
+            font-size: 22.4px;
+            line-height: 41.6px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+    }
+}
+
+.home-section3-container div {
+    background-color: #EAFEFC;
+    text-align: center;
+    padding-top: 100px;
+    h2 {
+        font-family: 'IM Fell English', serif;
+        font-size: 4.5rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #0D457F;
+        width: 100%;
+    }
+    p {
+        margin: 50px 0;
+    }
+    a {
+        font-family: 'IM Fell English', serif;
+        color: #0D457F;
+        background-color: #FDD908;
+        font-size: 22.4px;
+        line-height: 41.6px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+
+.gallery-section-container ul {
+    padding: 75px 100px;
+    background-color: #0D457F;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-section-container li {
+    width: calc((100% / 3) - 40px);
+    margin: 0 20px;
+}
