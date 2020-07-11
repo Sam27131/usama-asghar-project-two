@@ -1,21 +1,22 @@
-header {
+.main-header {
     background-image: url(./assets/home-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     height: 500px;
+    h1 {
+        font-family: 'IM Fell English', serif;
+        font-size: 7.9rem;
+        color: #FDD908;
+    }
+    img {
+        position: absolute;
+        right: 0;
+        top: 200px;
+        width: 50%;
+        min-width: 500px;
+    }
 }
 
-h1 {
-    font-family: 'IM Fell English', serif;
-    font-size: 7.9rem;
-    color: #FDD908;
-}
 
-header img {
-    position: absolute;
-    right: 0;
-    top: 200px;
-    width: 50%;
-    min-width: 500px;
-}
+

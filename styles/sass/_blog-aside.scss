@@ -1,0 +1,36 @@
+.mission-statement-container {
+    width: 30%;
+    background-color: #0D457F;
+    padding: 50px;
+    position: relative;
+    img {
+        position: absolute;
+        min-width: 300px;
+        top: 0;
+        left: 0;
+    }
+    h3 {
+        font-family: 'IM Fell English', serif;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #FDD908;
+        width: 100%;
+    }
+    p {
+        margin-top: 10px;
+        color: #FFFFFF;
+    }
+}
+
+.recent-posts {
+    h3 {
+        margin: 20px 0;
+    }
+    ul {
+        list-style: initial;
+    }
+    a {
+        color: #FFFFFF;
+    }
+}

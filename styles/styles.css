@@ -268,7 +268,7 @@ img {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -279,7 +279,7 @@ body {
   letter-spacing: 1px;
 }
 
-header {
+.main-header {
   background-image: url(./assets/home-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,26 +287,18 @@ header {
   height: 500px;
 }
 
-h1 {
+.main-header h1 {
   font-family: 'IM Fell English', serif;
   font-size: 7.9rem;
   color: #FDD908;
 }
 
-header img {
+.main-header img {
   position: absolute;
   right: 0;
   top: 200px;
   width: 50%;
   min-width: 500px;
-}
-
-.blog-header {
-  background-image: url(./assets/blog-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 500px;
 }
 
 .home-section1-container {
@@ -429,8 +421,76 @@ header img {
   margin: 0 20px;
 }
 
-.home-footer-container {
+.home-footer-container,
+.blog-footer-container {
   background-color: #FDD908;
   color: #0D457F;
   text-align: center;
+}
+
+.blog-header-container {
+  background-image: url(./assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+}
+
+.blog-header-container h1 {
+  font-family: 'IM Fell English', serif;
+  font-size: 7.9rem;
+  color: #FDD908;
+}
+
+.blog-header-container img {
+  position: absolute;
+  right: 0;
+  top: 350px;
+  width: 60%;
+  min-width: 500px;
+}
+
+.mission-statement-container {
+  width: 30%;
+  background-color: #0D457F;
+  padding: 50px;
+  position: relative;
+}
+
+.mission-statement-container img {
+  position: absolute;
+  min-width: 300px;
+  top: 0;
+  left: 0;
+}
+
+.mission-statement-container h3 {
+  font-family: 'IM Fell English', serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #FDD908;
+  width: 100%;
+}
+
+.mission-statement-container p {
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.recent-posts h3 {
+  margin: 20px 0;
+}
+
+.recent-posts ul {
+  list-style: initial;
+}
+
+.recent-posts a {
+  color: #FFFFFF;
+}
+
+.blog-article {
+  width: 70%;
+  float: right;
 }
