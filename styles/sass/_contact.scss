@@ -67,3 +67,53 @@ input {
     text-transform: uppercase;
     padding: 10px;
 }
+
+.info-container {
+    background-color: #EAFEFC;
+}
+
+.icons a {
+    padding: 0 10px;
+    color: #0D457F;
+}
+
+.address-container {
+    padding: 10px;
+}
+
+.address-container p:nth-of-type(1) {
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .contact-container {
+        position: initial;
+        float: right;
+    }
+    .info-container {
+        padding: 50px 0 300px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .info-container {
+        padding: 50px;
+        text-align: center;
+    }
+    .contact-container {
+        width: 100%;
+        float: none;
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-name,
+    #contact-email {
+    width: 100%;
+}
+}

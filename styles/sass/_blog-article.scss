@@ -1,11 +1,44 @@
 .blog-article {
-    width: 70%;
+    width: 60%;
     float: right;
+    position: relative;
 }
 
 .article-container,
 .comments-container {
     background-color: #EAFEFC;
+    padding: 100px;
+    h2 {
+        font-family: 'IM Fell English', serif;
+        font-size: 4.5rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #0D457F;
+    }
+}
+
+.article-container {
+    border-left: 5px solid #FDD908;
+    border-bottom: 5px solid #FDD908;
+    img {
+        position: absolute;
+        top: -150px;
+        right: 0;
+        box-shadow: -15px 15px #FDD908;
+        width: 98%;
+    }
+    h2 {
+        margin-top: 350px;
+    }
+    p {
+        margin: 30px 0;
+    }
+}
+
+.comments-container {
+    h2 {
+        margin-bottom: 50px;
+    }
 }
 
 .comment1,
@@ -13,9 +46,13 @@
     display: flex;
 }
 
+.comment1 {
+    margin-bottom: 100px;
+}
+
 .comment1 div:nth-of-type(1),
 .comment2 div:nth-of-type(1) {
-    padding: 20px;
+    padding: 0 20px;
 } 
 
 .comment1 div:nth-of-type(2),
@@ -26,6 +63,7 @@
 .comment-title {
     color: #0D457F;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .input-comment-container {

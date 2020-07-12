@@ -7,20 +7,54 @@
     h1 {
         font-family: 'IM Fell English', serif;
         font-size: 7.9rem;
+        font-weight: lighter;
         color: #FDD908;
         text-transform: uppercase;
         margin-top: 200px;
-        width: 81%;
         line-height: initial;
     }
     img {
         position: absolute;
         right: 0;
         top: 170px;
-        width: 45%;
+        width: 50%;
         min-width: 500px;
     }
 }
 
+.h1-container {
+    width: 80%;
+}
 
+@media (max-width: 1099px) {
+    .main-header img {
+        width: 45%;
+        min-width: 300px;
+    }
+}
 
+@media (max-width: 1024px) {
+    .main-header img {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+        .h1-container {
+            width: 100%;
+        }
+    } 
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        h1 {
+            font-size: 4rem;
+        }
+    } 
+}

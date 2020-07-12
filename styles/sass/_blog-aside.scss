@@ -1,13 +1,14 @@
 .mission-statement-container {
+    float: left;
     width: 30%;
     background-color: #0D457F;
     padding: 50px;
-    position: relative;
+    margin-top: 100px;
     img {
-        position: absolute;
-        min-width: 300px;
-        top: 0;
-        left: 0;
+        position: relative;
+        min-width: 380px;
+        top: -65px;
+        left: -115px;
     }
     h3 {
         font-family: 'IM Fell English', serif;

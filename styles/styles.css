@@ -280,20 +280,36 @@ body {
   letter-spacing: 1px;
 }
 
+.nav-container {
+  padding-top: 50px;
+}
+
 .nav-container li {
   display: inline-block;
 }
 
-.nav-container a {
+.nav-container li a {
   text-transform: capitalize;
   color: #FFFFFF;
   padding: 10px;
+  margin-right: 40px;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
 .nav-container a:hover {
   border-bottom: 2px solid #FDD908;
+}
+
+@media (max-width: 767px) {
+  .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-header {
@@ -307,10 +323,10 @@ body {
 .main-header h1 {
   font-family: 'IM Fell English', serif;
   font-size: 7.9rem;
+  font-weight: lighter;
   color: #FDD908;
   text-transform: uppercase;
   margin-top: 200px;
-  width: 81%;
   line-height: initial;
 }
 
@@ -318,8 +334,41 @@ body {
   position: absolute;
   right: 0;
   top: 170px;
-  width: 45%;
+  width: 50%;
   min-width: 500px;
+}
+
+.h1-container {
+  width: 80%;
+}
+
+@media (max-width: 1099px) {
+  .main-header img {
+    width: 45%;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-header img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .main-header .h1-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header h1 {
+    font-size: 4rem;
+  }
 }
 
 .home-section1-container {
@@ -414,13 +463,13 @@ body {
           box-shadow: -15px 15px #FDD908;
   position: relative;
   bottom: -30px;
-  right: -40px;
+  right: 0;
 }
 
 .home-section3-container div {
   background-color: #EAFEFC;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .home-section3-container div h2 {
@@ -430,10 +479,6 @@ body {
   text-transform: uppercase;
   color: #0D457F;
   width: 100%;
-}
-
-.home-section3-container div p {
-  margin: 25px 0;
 }
 
 .home-section3-container div a {
@@ -463,6 +508,17 @@ body {
   padding: 50px;
 }
 
+.vacation-days-p,
+.win-trip-p {
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: left;
+}
+
+.vacation-days-p {
+  width: 70%;
+}
+
 .gallery-section-container ul {
   padding: 75px 100px;
   background-color: #0D457F;
@@ -477,6 +533,119 @@ body {
 .gallery-section-container li {
   width: calc((100% / 3) - 40px);
   margin: 0 20px;
+}
+
+@media (max-width: 1075px) {
+  .home-section2-container div:nth-of-type(1),
+  .home-section2-container div:nth-of-type(4) {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: initial;
+  }
+}
+
+@media (max-width: 1056px) {
+  .win-trip div h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-section2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-section2-container div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 985px) {
+  .win-trip div h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 915px) {
+  .win-trip {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .win-trip div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .win-trip div h2,
+  .win-trip div p,
+  .win-trip div a {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-section1-container {
+    padding: 50px 0;
+  }
+  .home-section3-container div {
+    padding-top: 50px;
+  }
+  .win-trip div:nth-of-type(2) {
+    width: 100%;
+  }
+  .gallery-section-container ul {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-section1-container div {
+    text-align: center;
+  }
+  .home-section1-container div h2 {
+    font-size: 3rem;
+  }
+  .home-section1-container div p {
+    font-size: 1.5rem;
+  }
+  .home-section3-container div h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section2-container div h2 {
+    font-size: 3.5rem;
+  }
+  .home-section3-container div h2 {
+    font-size: 3rem;
+  }
+  .win-trip div:nth-of-type(1) {
+    padding: 0 20px;
+  }
+  .gallery-section-container ul {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-section1-container div h2 {
+    font-size: 2.5rem;
+  }
+  .home-section1-container div p {
+    font-size: 1.3rem;
+  }
+  .home-section2-container div h2 {
+    font-size: 3rem;
+  }
 }
 
 .footer-container {
@@ -496,7 +665,7 @@ body {
 .blog-header-container h1 {
   font-family: 'IM Fell English', serif;
   font-size: 7.9rem;
-  color: #FDD908;
+  color: #FFFFFF;
   text-transform: uppercase;
   margin-top: 100px;
 }
@@ -510,17 +679,18 @@ body {
 }
 
 .mission-statement-container {
+  float: left;
   width: 30%;
   background-color: #0D457F;
   padding: 50px;
-  position: relative;
+  margin-top: 100px;
 }
 
 .mission-statement-container img {
-  position: absolute;
-  min-width: 300px;
-  top: 0;
-  left: 0;
+  position: relative;
+  min-width: 380px;
+  top: -65px;
+  left: -115px;
 }
 
 .mission-statement-container h3 {
@@ -550,13 +720,50 @@ body {
 }
 
 .blog-article {
-  width: 70%;
+  width: 60%;
   float: right;
+  position: relative;
 }
 
 .article-container,
 .comments-container {
   background-color: #EAFEFC;
+  padding: 100px;
+}
+
+.article-container h2,
+.comments-container h2 {
+  font-family: 'IM Fell English', serif;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #0D457F;
+}
+
+.article-container {
+  border-left: 5px solid #FDD908;
+  border-bottom: 5px solid #FDD908;
+}
+
+.article-container img {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  -webkit-box-shadow: -15px 15px #FDD908;
+          box-shadow: -15px 15px #FDD908;
+  width: 98%;
+}
+
+.article-container h2 {
+  margin-top: 350px;
+}
+
+.article-container p {
+  margin: 30px 0;
+}
+
+.comments-container h2 {
+  margin-bottom: 50px;
 }
 
 .comment1,
@@ -566,9 +773,13 @@ body {
   display: flex;
 }
 
+.comment1 {
+  margin-bottom: 100px;
+}
+
 .comment1 div:nth-of-type(1),
 .comment2 div:nth-of-type(1) {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .comment1 div:nth-of-type(2),
@@ -579,6 +790,7 @@ body {
 .comment-title {
   color: #0D457F;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .input-comment-container {
@@ -710,4 +922,61 @@ input {
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
   padding: 10px;
+}
+
+.info-container {
+  background-color: #EAFEFC;
+}
+
+.icons a {
+  padding: 0 10px;
+  color: #0D457F;
+}
+
+.address-container {
+  padding: 10px;
+}
+
+.address-container p:nth-of-type(1) {
+  margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    position: initial;
+    float: right;
+  }
+  .info-container {
+    padding: 50px 0 300px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-container {
+    padding: 50px;
+    text-align: center;
+  }
+  .contact-container {
+    width: 100%;
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-name,
+  #contact-email {
+    width: 100%;
+  }
 }
