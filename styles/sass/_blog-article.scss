@@ -2,3 +2,67 @@
     width: 70%;
     float: right;
 }
+
+.article-container,
+.comments-container {
+    background-color: #EAFEFC;
+}
+
+.comment1,
+.comment2 {
+    display: flex;
+}
+
+.comment1 div:nth-of-type(1),
+.comment2 div:nth-of-type(1) {
+    padding: 20px;
+} 
+
+.comment1 div:nth-of-type(2),
+.comment2 div:nth-of-type(2) {
+    width: 80%;
+}
+
+.comment-title {
+    color: #0D457F;
+    font-weight: bold;
+}
+
+.input-comment-container {
+    background-color: #EAFEFC;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.personal-info {
+    display: flex;
+    justify-content: center;
+}
+
+#blog-name,
+#blog-email {
+    border-bottom: 2px solid #FDD908;
+    width: 50%;
+}
+
+#comment {
+    border: 2px solid #FDD908;
+}
+
+#blog-name,
+#blog-email,
+#comment {
+    background-color: #EAFEFC;
+    color: black;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#blog-submit {
+    border: none;
+    color: #FDD908;
+    background-color: #0D457F;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    padding: 10px;
+}

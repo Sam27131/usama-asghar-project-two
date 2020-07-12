@@ -1,0 +1,69 @@
+.contact-header-container {
+    background-image: url(./assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    h1 {
+        font-family: 'IM Fell English', serif;
+        font-size: 7.9rem;
+        color: #FDD908;
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+}
+
+.info-container {
+    padding: 50px 0 300px 100px;
+}
+
+.contact-container {
+    background-color: #0D457F;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 10px 10px #FDD908;
+    position: absolute;
+    right: 50px;
+    top: 350px;
+    width: 60%;
+}
+.personal-info {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+#contact-name,
+#contact-email {
+    border-bottom: 2px solid #FDD908;
+    width: 50%;
+}
+
+#contact-message {
+    border: 2px solid #FDD908;
+}
+
+#contact-name,
+#contact-email,
+#message {
+    background-color: #0D457F;
+    color: #FFFFFF;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#contact-submit {
+    border: none;
+    background-color: #FDD908;
+    color: #0D457F;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    padding: 10px;
+}

@@ -1,0 +1,15 @@
+.nav-container li {
+    display: inline-block;
+    // padding: 0 20px;
+}
+
+.nav-container a {
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 10px;
+    transition: all 0.1s ease;
+}
+
+.nav-container a:hover {
+    border-bottom: 2px solid #FDD908;
+}

@@ -16,7 +16,7 @@
                 <li><a href="index.html">home</a></li>
                 <li><a href="">about</a></li>
                 <li><a href="blog.html">blog</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
         <h1 class="wrapper">blog</h1>
@@ -57,8 +57,8 @@
                     <img src="./styles/assets/comment-1.jpg" alt="Image of commenter">
                 </div>
                 <div>
-                    <p>Tuesday October 9th, 2019 by Ali</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis! Placeat, optio? Modi voluptatem quia ea debitis, nesciunt officiis neque beatae nihil voluptatibus nobis, officia quae, quas aspernatur cumque ullam in sapiente corrupti tenetur nulla delectus corporis repellendus iure id.</p>
+                    <p class="comment-title">Tuesday October 9th, 2019 by Ali</p>
+                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis! Placeat, optio? Modi voluptatem quia ea debitis, nesciunt officiis neque beatae nihil voluptatibus nobis, officia quae, quas aspernatur cumque ullam in sapiente corrupti tenetur nulla delectus corporis repellendus iure id.</p>
                 </div>
             </div>
             <div class="comment2">
@@ -66,22 +66,25 @@
                     <img src="./styles/assets/comment-2.jpg" alt="Image of commenter">
                 </div>
                 <div>
-                    <p>Wednesday October 10th, 2019 by Lisa</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis! Placeat, optio? Modi voluptatem quia ea debitis, nesciunt officiis neque beatae nihil voluptatibus nobis, officia quae, quas aspernatur cumque ullam in sapiente corrupti tenetur nulla delectus corporis repellendus iure id.</p>
+                    <p class="comment-title">Wednesday October 10th, 2019 by Lisa</p>
+                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis! Placeat, optio? Modi voluptatem quia ea debitis, nesciunt officiis neque beatae nihil voluptatibus nobis, officia quae, quas aspernatur cumque ullam in sapiente corrupti tenetur nulla delectus corporis repellendus iure id.</p>
                 </div>
             </div>
             <div class="input-comment-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email">
-                <label for="comment">Comment</label>
-                <input type="text" id="comment" name="comment">
-                <button class="submit-comment">post comment</button>
-            </div>
+                    <div class="personal-info">
+                        <label for="blog-name"></label>
+                        <input type="text" id="blog-name" placeholder="Name">
+                        <label for="blog-email"></label>
+                        <input type="email" id="blog-email" placeholder="Email address">
+                    </div>
+                    <label for="comment"></label>
+                    <textarea id="comment" placeholder="Comment" rows="10" cols="50"></textarea>
+                    <label for="blog-submit"></label>
+                    <input type="submit" id="blog-submit" value="post comment">
+                </div>
         </section>
     </article>
-    <footer class="blog-footer-container">
+    <footer class="footer-container">
         <p>Copyright 2019 HackerYou</p>
         <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
