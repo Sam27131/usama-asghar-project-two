@@ -2,7 +2,7 @@
     float: left;
     width: 30%;
     background-color: #0D457F;
-    padding: 50px;
+    padding: 25px;
     margin-top: 100px;
     img {
         position: relative;
@@ -17,21 +17,54 @@
         text-transform: uppercase;
         color: #FDD908;
         width: 100%;
+        margin: 20px 0;
     }
     p {
         margin-top: 10px;
         color: #FFFFFF;
     }
-}
-
-.recent-posts {
-    h3 {
-        margin: 20px 0;
+    ul li {
+        padding: 5px 0;
     }
-    ul {
-        list-style: initial;
+    ul li::before {
+        content: "\2022";
+        color: #FFFFFF;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 10px;
     }
     a {
         color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1110px) {
+    .mission-statement-container a,
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mission-statement-container {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 977px) {
+    .mission-statement-container {
+        text-align: center;
+        float: none;
+        width: 100%;
+        img {
+            position: initial;
+            max-height: 400px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-statement-container img {
+        display: none;
     }
 }

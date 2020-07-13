@@ -310,6 +310,24 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nav-container li a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container li a {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-container li a {
+    padding: 0 10px;
+    font-size: 1.4rem;
+  }
 }
 
 .main-header {
@@ -678,11 +696,17 @@ body {
   min-width: 500px;
 }
 
+@media (max-width: 767px) {
+  .blog-header-container h1 {
+    text-align: center;
+  }
+}
+
 .mission-statement-container {
   float: left;
   width: 30%;
   background-color: #0D457F;
-  padding: 50px;
+  padding: 25px;
   margin-top: 100px;
 }
 
@@ -700,6 +724,7 @@ body {
   text-transform: uppercase;
   color: #FDD908;
   width: 100%;
+  margin: 20px 0;
 }
 
 .mission-statement-container p {
@@ -707,16 +732,51 @@ body {
   color: #FFFFFF;
 }
 
-.recent-posts h3 {
-  margin: 20px 0;
+.mission-statement-container ul li {
+  padding: 5px 0;
 }
 
-.recent-posts ul {
-  list-style: initial;
-}
-
-.recent-posts a {
+.mission-statement-container ul li::before {
+  content: "\2022";
   color: #FFFFFF;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.mission-statement-container a {
+  color: #FFFFFF;
+}
+
+@media (max-width: 1110px) {
+  .mission-statement-container a,
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mission-statement-container {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 977px) {
+  .mission-statement-container {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  .mission-statement-container img {
+    position: initial;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-statement-container img {
+    display: none;
+  }
 }
 
 .blog-article {
@@ -802,7 +862,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
+  padding: 30px;
 }
 
 .personal-info {
@@ -840,6 +900,66 @@ body {
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
   padding: 10px;
+}
+
+@media (max-width: 1145px) {
+  .article-container,
+  .comments-container {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 977px) {
+  .article-container h2,
+  .comments-container h2 {
+    font-size: 3.5rem;
+  }
+  .article-container img {
+    position: initial;
+  }
+  .article-container h2 {
+    margin-top: 50px;
+  }
+  .blog-article {
+    float: none;
+    width: 100%;
+  }
+  #blog-name,
+  #blog-email {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container,
+  .comments-container {
+    padding: 25px;
+  }
+  .article-container h2,
+  .comments-container h2 {
+    text-align: center;
+  }
+  .article-container p,
+  .comments-container p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .comment1 img,
+  .comment2 img {
+    display: none;
+  }
+  .input-comment-container {
+    padding: 10px;
+  }
+  #blog-name {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #blog-email {
+    margin: 10px 0;
+  }
 }
 
 .contact-header-container {
@@ -966,6 +1086,11 @@ input {
 }
 
 @media (max-width: 767px) {
+  .contact-header-container h1 {
+    margin-top: 200px;
+    font-size: 7rem;
+    text-align: center;
+  }
   .personal-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -978,5 +1103,23 @@ input {
   #contact-name,
   #contact-email {
     width: 100%;
+  }
+}
+
+@media (max-width: 615px) {
+  .contact-header-container h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header-container h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-header-container h1 {
+    font-size: 3.5rem;
   }
 }

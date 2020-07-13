@@ -19,3 +19,9 @@
         min-width: 500px;
     }
 }
+
+@media (max-width: 767px) {
+    .blog-header-container h1 {
+        text-align: center;
+    }    
+}

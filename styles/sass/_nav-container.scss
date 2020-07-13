@@ -21,4 +21,22 @@
         display: flex;
         justify-content: center;
     }
+    .nav-container li a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container li a {
+        margin: 0;
+        padding: 0 15px;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-container li a {
+        padding: 0 10px;
+        font-size: 1.4rem;
+    }
 }

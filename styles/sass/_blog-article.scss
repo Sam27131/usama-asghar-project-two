@@ -70,7 +70,7 @@
     background-color: #EAFEFC;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
 }
 .personal-info {
     display: flex;
@@ -103,4 +103,68 @@
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
     padding: 10px;
+}
+
+@media (max-width:1145px) {
+    .article-container,
+    .comments-container {
+        padding: 50px;
+    } 
+}
+
+@media (max-width:977px) {
+    .article-container,
+    .comments-container {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+    .article-container {
+        img {
+            position: initial;
+        }
+        h2 {
+            margin-top: 50px;
+        }
+    }
+    .blog-article {
+        float: none;
+        width: 100%;
+    }
+    #blog-name,
+    #blog-email {
+    width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-container,
+    .comments-container {
+        padding: 25px;
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .comment1,
+    .comment2 {
+        img {
+            display: none;
+        }
+    }
+    .input-comment-container {
+        padding: 10px;
+    }
+    #blog-name {
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #blog-email {
+        margin: 10px 0;
+    }
 }
