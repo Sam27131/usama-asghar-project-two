@@ -39,6 +39,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    .main-header {
+        h1 {
+            margin-top: 0;
+            font-size: 7.5rem;
+        }
+    }
+}
+
 @media (max-width: 600px) {
     .main-header {
         h1 {

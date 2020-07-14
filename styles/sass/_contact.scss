@@ -15,6 +15,7 @@
 
 .info-container {
     padding: 50px 0 300px 100px;
+    background-color: #EAFEFC;
 }
 
 .contact-container {
@@ -66,10 +67,6 @@ input {
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
     padding: 10px;
-}
-
-.info-container {
-    background-color: #EAFEFC;
 }
 
 .icons a {
@@ -126,6 +123,7 @@ input {
 @media (max-width: 615px) {
     .contact-header-container h1 {
         font-size: 5rem;
+        margin-top: 100px;
     }
 }
 
